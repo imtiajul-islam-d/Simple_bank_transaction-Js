@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcection</title>
+     <!-- Tailwind cdn -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- Tailwind cdn -->
+</head>
+<body class="bg-cyan-600">
+    <section class="w-9/12 min-h-screen mx-auto pb-4">
+        <h2 class="text-center pt-12 mb-12 font-mono text-3xl lg:text-6xl text-white font-black">Transactions</h2>
+        <main class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="bg-white h-32 flex flex-col justify-center align-center text-center p-2">
+                <h2>Deposited Amount</h2>
+                <p class="text-cyan-600">$<span id="currentDepositeAmount">00</span></p>
+            </div>
+            <div class="bg-white h-32 flex flex-col justify-center align-center text-center p-2">
+                <h2>Withdrawn Amount</h2>
+                <p class="text-cyan-600">$ <span id="current-withdraw">0</span></p>
+            </div>
+            <div class="bg-white h-32 flex flex-col justify-center align-center text-center p-2">
+                <h2>Total Balance</h2>
+                <p class="text-cyan-600">$<span id="total-amount">100</span></p>
+            </div>
+        </main>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">
+            <div class="bg-white p-4 flex justify-center">
+                <form id="deposite" class="text-start" action="#">
+                    <h3 class="font-semibold text-2xl font-mono text-cyan-800">Deposite</h3>
+                    <input id="deposite-amount" class="border-sky-100 border-solid border-2 p-1 my-2 focus:outline-none" type="text" name="deposite" id="deposite" placeholder="$ Deposite amount">
+                    <br>
+                    <input id="deposite-btn" class="bg-cyan-600 p-2 text-white" type="submit" value="Deposite">
+                </form>
+            </div>
+            <div class="bg-white p-4 flex justify-center">
+                <form id="withdraw-form" class="text-start" action="#">
+                    <h3 class="font-semibold text-2xl font-mono text-cyan-800">Withdraw</h3>
+                    <input id="withdraw-field" class="border-sky-100 border-solid border-2 p-1 my-2 focus:outline-none" type="text" name="deposite" id="deposite" placeholder="$ Deposite amount">
+                    <br>
+                    <input class="bg-cyan-600 p-2 text-white" type="submit" value="Withdraw">
+                </form>
+            </div>
+        </section>
+    </section>
+    <script src="../js/utilities.js"></script>
+    <script src="../js/withdraw.js"></script>
+    <script src="../js/deposite.js"></script>
+</body>
+</html>
